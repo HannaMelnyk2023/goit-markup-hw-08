@@ -1,0 +1,44 @@
+/* Блок соціальних мереж */
+.footer-social__container {
+  margin-right: 93px;
+}
+.footer__title {
+  text-transform: uppercase;
+
+  @include fonts(14px, 700, 1.2, 0.03em);
+
+  text-align: left;
+  color: var(--logo-whitecolor);
+
+  margin-bottom: 20px;
+}
+
+.footer-social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff1a;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background-color: var(--accent-background);
+  }
+}
+.footer-social__icon {
+  fill: var(--prime-white-background);
+}
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
+}
