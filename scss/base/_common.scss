@@ -2,7 +2,10 @@ body {
   background-color: var(--prime-white-background);
   color: var(--prime-color);
   font-family: $primaryFontFamily;
+
+
 }
+
 header {
   border-bottom: 1px solid #ececec;
 }
@@ -12,4 +15,12 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.title-second {
+  margin-bottom: 50px;
+
+  color: var(--second-color);
+  @include fonts(36px, 700, 1.2, 0.03em);
+
+  text-align: center;
 }
