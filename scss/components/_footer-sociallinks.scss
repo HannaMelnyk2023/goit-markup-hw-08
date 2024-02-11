@@ -1,13 +1,15 @@
 /* Блок соціальних мереж */
 .footer-social__container {
   // margin-right: 93px;
+  margin-bottom: 60px;
+
 }
 .footer__title {
   text-transform: uppercase;
 
   @include fonts(14px, 700, 1.2, 0.03em);
 
-  text-align: left;
+  text-align: center;
   color: var(--logo-whitecolor);
 
   margin-bottom: 20px;
@@ -15,8 +17,8 @@
 
 .footer-social__list {
   display: flex;
-  // justify-content: center;
-  // align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-social__link {

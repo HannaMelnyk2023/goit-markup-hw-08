@@ -1,6 +1,7 @@
 /* Футер */
 
 .footer {
+
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--black-background);
@@ -8,16 +9,18 @@
 }
 .footer__container {
   // display: flex;
-  align-items: baseline;
+  // align-items: baseline;
 
   // width: 1200px;
+  text-align: center;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 .footer__address-container {
   min-width: 231px;
-  margin-right: 70px;
+  margin-bottom: 60px;
+  // margin-right: 70px;
 }
 
 .footer__logo {
