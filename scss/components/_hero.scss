@@ -68,7 +68,7 @@
       (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, #2f303a66, #2f303a66),
         url(/images/tablet_hero@2.png);
-    }
+    }}
     .hero {
       padding-top: 118px;
       padding-bottom: 118px;
@@ -77,12 +77,9 @@
       max-width: 364px;
       @include fonts(26px, 900, 1.6, 0.06em);
     }
-    .hero__button {
-      min-width: 200px;
-      padding: 10px 24px;
-    }
+    
   }
-}
+
 @media screen and (min-width: 1600px) {
   .section.hero {
     max-width: 1600px;
@@ -109,8 +106,6 @@
     text-transform: uppercase;
   }
 
-  .hero__button {
-    min-width: 216px;
-    padding: 10px 32px;
+  
   }
-}
+

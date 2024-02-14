@@ -1,13 +1,14 @@
 /* Хедер */
 .header {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
-
 .header-logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 16px;
   text-decoration: none;
   color: var(--logo-blackcolor);
   font-family: $secondaryFontFamily;
@@ -20,84 +21,222 @@
   color: var(--accent-color);
 }
 
-// .header-nav {
-//   margin-left: 93px;
-// }
-
-.header-nav__list {
-  // display: flex;
-}
-
-.header-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-nav__link {
-  // display: block;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
-
-  color: var(--second-color);
-
-  text-decoration: none;
-
-  @include fonts(14px, 500, 1.2, 0.02em);
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &.current {
-    color: var(--accent-color);
-    position: relative;
-
-    // &::before {
-    //   content: " ";
-    //   position: absolute;
-    //   bottom: 0;
-    //   left: 0;
-    //   display: block;
-    //   width: 100%;
-    //   height: 4px;
-    //   border-radius: 2px;
-    //   background-color: var(--accent-color);
-    // }
+@media screen and (min-width: 768px) {
+  // звичайне меню з навігацією, та адресою
+  .menu {
+    display: flex;
+    justify-content: space-between;
   }
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  // випадаюче меню
+  .menu-container {
+    display: none;
+  }
+// кнопка-бургер викликаюча меню
+  .menu-toggle {
+    display: none;
+  }
+
+  .header-logo {
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
+
+  .header-nav {
+    margin-left: 88px;
+    margin-right: 88px;
+  }
+  
+  .header-nav__list {
+    display: flex;
+  }
+
+  .header-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .header-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--second-color);
+
+    text-decoration: none;
+
+    @include fonts(14px, 500, 1.2, 0.02em);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.current {
+      color: var(--accent-color);
+      position: relative;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+      }
+    }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .header-address {
+    display: flex;
+    margin-top: 21px;
+    margin-bottom: 21px;
+    // margin-left: auto;
+  flex-wrap: wrap;
+
+  }
+
+  .header-address__item:not(:last-child) {
+    // margin-right: 50px;
+  }
+  .header-address__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .header-address__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--prime-color);
+
+    text-decoration: none;
+
+    @include fonts(12px, 500, 1.2, 0.02em);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
+@media screen and (min-width: 1600px) {
+  // звичайне меню з навігацією, та адресою
+  // .menu {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-logo {
 
-.header-address {
-  // display: flex;
-  // margin-left: auto;
-}
-
-.header-address__item:not(:last-child) {
-  // margin-right: 50px;
-}
-.header-address__icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-.header-address__link {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-
-  color: var(--prime-color);
-
-  text-decoration: none;
-
-  @include fonts(14px, 500, 1.2, 0.02em);
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
+    text-decoration: none;
+    color: var(--logo-blackcolor);
+    font-family: $secondaryFontFamily;
+  
+    @include fonts(26px, 700, 1.2, 0.03em);
+  }
+  
+  /*  частина лого WEB */
+  .logo {
     color: var(--accent-color);
+  }
+  
+  .header-nav {
+    margin-left: 93px;
+  }
+  
+  .header-nav__list {
+    display: flex;
+  }
+  
+  .header-nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  .header-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    color: var(--second-color);
+  
+    text-decoration: none;
+  
+    @include fonts(14px, 500, 1.2, 0.02em);
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &.current {
+      color: var(--accent-color);
+      position: relative;
+  
+      &::before {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+      }
+    }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  
+  .header-address {
+    display: flex;
+    margin-left: auto;
+  }
+  .header-address__item{
+    display: flex;
+  }
+
+  .header-address__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .header-address__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .header-address__link {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  
+    color: var(--prime-color);
+  
+    text-decoration: none;
+  
+    @include fonts(14px, 500, 1.2, 0.02em);
+  
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }

@@ -9,7 +9,7 @@
   color: var(--logo-blackcolor);
 }
 .form-modal {
-  width: 450px;
+  width: 370px;
 }
 .form-modal__recall {
   text-align: left;
@@ -101,8 +101,7 @@
   position: relative;
   margin-top: 10px;
   margin-bottom: 30px;
-
-  @include fonts(14px, 400, 1.7, 0.03em);
+  @include fonts(12px, 400, 1.7, 0.03em);
 
   text-align: left;
   color: #757575;
@@ -159,4 +158,13 @@
   text-align: center;
 
   box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+@media screen and (min-width: 1600px) {
+  .form-modal__checkbox {
+    @include fonts(14px, 400, 1.7, 0.03em);
+  }
+  .form-modal {
+    width: 448px;
+  }
 }
