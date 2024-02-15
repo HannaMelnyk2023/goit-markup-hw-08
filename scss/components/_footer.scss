@@ -1,17 +1,12 @@
 /* Футер */
-
 .footer {
-
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--black-background);
   @include fonts(14px, null, 1.2, 0.03em);
 }
-.footer__container {
-  // display: flex;
-  // align-items: baseline;
 
-  // width: 1200px;
+.footer__container {
   text-align: center;
   padding-left: 15px;
   padding-right: 15px;
@@ -20,7 +15,6 @@
 .footer__address-container {
   min-width: 231px;
   margin-bottom: 60px;
-  // margin-right: 70px;
 }
 
 .footer__logo {
@@ -67,5 +61,34 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__tablet {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+  }
+
+  .footer__tablet {
+    align-items: baseline;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 93px;
+  }
+  .footer__address-container {
+    margin-right: 70px;
   }
 }

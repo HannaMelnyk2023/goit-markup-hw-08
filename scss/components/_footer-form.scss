@@ -1,12 +1,18 @@
 /* Підписка */
+.footer__subscribe {
+  display: block;
+}
 
+.footer__title {
+  display: block;
+  width: 100%;
+}
 .footer__form {
-  // display: flex;
-  // width: 570px;
   border-radius: 4px;
+  width: 100%;
 }
 .footer__button {
-  display: inline-flex; 
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 
@@ -26,9 +32,6 @@
 }
 
 .footer__input {
-  // display: inline-block;
-  // min-width: 358px;
-  // margin-right: 12px;
   min-width: 100%;
   margin-bottom: 20px;
 
@@ -52,4 +55,33 @@
   margin-left: 10px;
 
   fill: var(--prime-white-background);
+}
+@media screen and (min-width: 768px) {
+  .footer__subscribe {
+    width: 450px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .footer__subscribe {
+    width: 570px;
+    margin: 0;
+  }
+
+  .footer__form {
+    display: flex;
+  }
+
+  .footer__input {
+    display: inline-block;
+    min-width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+  .footer__button {
+    display: flex;
+  }
+  .footer__title {
+    text-align: left;
+  }
 }

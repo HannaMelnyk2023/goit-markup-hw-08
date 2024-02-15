@@ -101,9 +101,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -143,6 +143,11 @@ img {
   }
   .menu-toggle {
     display: none;
+  }
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .header-logo {
     margin-top: 24px;
@@ -1197,9 +1202,59 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .footer__tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 60px;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: 1200px;
+  }
+  .footer__tablet {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 93px;
+  }
+  .footer__address-container {
+    margin-right: 70px;
+  }
+}
 /* Підписка */
+.footer__subscribe {
+  display: block;
+}
+
+.footer__title {
+  display: block;
+  width: 100%;
+}
+
 .footer__form {
   border-radius: 4px;
+  width: 100%;
 }
 
 .footer__button {
@@ -1249,6 +1304,37 @@ img {
   fill: var(--prime-white-background);
 }
 
+@media screen and (min-width: 768px) {
+  .footer__subscribe {
+    width: 450px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .footer__subscribe {
+    width: 570px;
+    margin: 0;
+  }
+  .footer__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__input {
+    display: inline-block;
+    min-width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
+  .footer__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__title {
+    text-align: left;
+  }
+}
 /* Блок соціальних мереж */
 .footer-social__container {
   margin-bottom: 60px;
@@ -1310,6 +1396,14 @@ img {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 1600px) {
+  .footer-social__container {
+    margin-bottom: 0;
+  }
+  .footer__title {
+    text-align: left;
+  }
+}
 @media (max-width: 767px) {
   .menu {
     display: none;
@@ -1343,7 +1437,7 @@ img {
 }
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+  fill: var(--accent-color);
 }
 
 .menu-container {
@@ -1352,27 +1446,27 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding: 40px;
+  background-color: var(--logo-whitecolor);
   z-index: 999;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container.is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: var(--second-color);
 }
 
 .mobile-menu {
@@ -1381,9 +1475,32 @@ img {
   list-style: none;
 }
 
-.mobile-menu .link {
-  display: block;
-  padding: 10px;
-  color: #fff;
+.mobile-nav {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.mobile-nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-decoration: none;
+  color: var(--second-color);
+  margin-bottom: 32px;
+}
+.mobile-nav__link:hover, .mobile-nav__link:focus {
+  color: var(--accent-color);
+}
+.mobile-nav__link:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }/*# sourceMappingURL=main.css.map */

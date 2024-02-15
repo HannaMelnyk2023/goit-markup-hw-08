@@ -1,8 +1,6 @@
 /* Блок соціальних мереж */
 .footer-social__container {
-  // margin-right: 93px;
   margin-bottom: 60px;
-
 }
 .footer__title {
   text-transform: uppercase;
@@ -43,4 +41,12 @@
 }
 .footer-social__item:not(:last-child) {
   margin-right: 10px;
+}
+@media screen and (min-width: 1600px) {
+  .footer-social__container {
+    margin-bottom: 0;
+  }
+  .footer__title {
+    text-align: left;
+  }
 }
