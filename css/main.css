@@ -1583,6 +1583,10 @@ img {
   padding-right: 10px;
   padding-left: 10px;
   position: relative;
+  color: var(--accent-color);
+}
+.mobile-social__link:not(:last-child) {
+  background-color: red;
 }
 .mobile-social__link::after {
   content: " ";
@@ -1595,7 +1599,6 @@ img {
   border-radius: 2px;
   background-color: var(--prime-color);
 }
-
-.mobile-social__link[data-after=false]::after {
+.mobile-social__link:not(:last-child)::after {
   display: none;
 }/*# sourceMappingURL=main.css.map */
