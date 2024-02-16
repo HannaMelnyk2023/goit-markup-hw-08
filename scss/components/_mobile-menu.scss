@@ -110,22 +110,10 @@
   @include fonts(18px, 500, 1.2, 0.02em);
   color: var(--accent-color);
 }
-.mobil-social__item {
+.mobile-social__item {
   display: flex;
-  // &:not(:last-child) {background-color: red;}
-}
-
-.mobile-social__link {
-  text-decoration: none;
-  display: block;
-  padding-right: 10px;
-  padding-left: 10px;
   position: relative;
-  color: var(--accent-color);
-  
-  &:not(:last-child) {
-    background-color: red;
-  }
+  //  &:not(:last-child) {background-color: red;}
 
   &::after {
     content: " ";
@@ -138,11 +126,19 @@
     border-radius: 2px;
     background-color: var(--prime-color);
   }
-  &:not(:last-child)::after {
+  &:last-child::after {
     display: none;
   }
 }
 
-// .mobile-social__link[data-after="false"]::after {
-//   display: none;
-// }
+.mobile-social__link {
+  text-decoration: none;
+  display: block;
+  padding-right: 10px;
+  padding-left: 10px;
+  
+  color: var(--accent-color);
+  
+}
+
+
