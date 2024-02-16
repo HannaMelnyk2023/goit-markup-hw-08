@@ -19,54 +19,68 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
-  <body>
+  
     
-    <header>
-      <!--Хедер-->
-      <!-- <section class="section"> -->
-      <div class="header container">
-        <a class="header-logo" href="./index.html"
-          ><span class="logo">Web</span>Studio</a
-        >
-        <nav class="header-nav">
-          <ul class="header-nav__list list">
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="./index.html">Студія</a>
+    <body> 
+      <header>
+        <!--Хедер-->
+        <!-- <section class="section"> -->
+        <div class="header container">
+          <a class="header-logo" href="./index.html"
+            ><span class="logo">Web</span>Studio</a
+          > 
+          <!-- кнопка для випадаючого меню при 480px -->
+          <div class="container-toggle">
+            <button class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+               
+          <svg
+            width="40"
+            height="40"
+            fill="currentColor">
+            <use class="icon-menu" href="./images/sprite.svg#icon-button_burger"></use>
+          </svg>
+          </button></div>
+          
+       <div class="menu">
+          <nav class="header-nav">
+            <ul class="header-nav__list list">
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="./index.html">Студія</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link current" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+  
+          <ul class="header-address list">
+            <li class="header-address__item">
+              <a class="header-address__link" href="mailto:info@devstudio.com">
+                <svg class="header-address__icon" width="16px" height="12px">
+                  <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link current" href="./portfolio.html"
-                >Портфоліо</a
+            <li class="header-address__item">
+              <a class="header-address__link" href="tel:+380961111111"
+                ><svg class="header-address__icon" width="10px" height="16px">
+                  <use href="./images/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
-            <li class="header-nav__item">
-              <a class="header-nav__link" href="">Контакти</a>
-            </li>
           </ul>
-        </nav>
-
-        <ul class="header-address list">
-          <li class="header-address__item">
-            <a class="header-address__link" href="mailto:info@devstudio.com">
-              <svg class="header-address__icon" width="16px" height="12px">
-                <use href="./images/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="header-address__item">
-            <a class="header-address__link" href="tel:+380961111111"
-              ><svg class="header-address__icon" width="10px" height="16px">
-                <use href="./images/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
-      <!-- </section> -->
-    </header>
-
-    <main>
+        <!-- </section> -->
+      </header>
+      <main>
       <section class="section">
         <!--Фільтри-->
         <div class="container">
@@ -94,7 +108,9 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img">
-                  <img src=./images/img-1.jpg alt="фото Технокряк" width="370">
+                  <img  class="portfolio__img-item"
+                  srcset="./images/mobile_portf1.jpg, ./images/mobile_portf1_2x.jpg 2x"
+                  src="./images/img-1.jpg" alt="фото Технокряк">
 
                   <div class="portfolio__overlay">
                     <p>
@@ -114,8 +130,9 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img">
-                  <img src=./images/img-2.jpg alt="фото Постер New Orlean vs
-                  Golden Star" width="370">
+                  <img class="portfolio__img-item"
+                  srcset="./images/mobile_portf2.jpg, ./images/mobile_portf2_2x.jpg 2x" src=./images/img-2.jpg alt="фото Постер New Orlean vs
+                  Golden Star">
                   <div class="portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -136,8 +153,9 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img">
-                  <img src=./images/img-3.jpg alt="фото Ресторан Seafood"
-                  width="370">
+                  <img class="portfolio__img-item"
+                  srcset="./images/mobile_portf3.jpg, ./images/mobile_portf3_2x.jpg 2x"src=./images/img-3.jpg alt="фото Ресторан Seafood"
+                 >
                   <div class="portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -157,8 +175,8 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img">
-                  <img src=./images/img-4.jpg alt="фото Проєкт Prime"
-                  width="370">
+                  <img class="portfolio__img-item"
+                  srcset="./images/mobile_portf4.jpg, ./images/mobile_portf4_2x.jpg 2x"src=./images/img-4.jpg alt="фото Проєкт Prime">
                   <div class="portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -178,8 +196,8 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img">
-                  <img src=./images/img-5.jpg alt="фото Проєкт Boxes"
-                  width="370">
+                  <img class="portfolio__img-item"
+                  srcset="./images/mobile_portf5.jpg, ./images/mobile_portf5_2x.jpg 2x"src=./images/img-5.jpg alt="фото Проєкт Boxes">
                   <div class="portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -198,8 +216,9 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img">
-                  <img src=./images/img-6.jpg alt="фото Inspiration has no
-                  Borders" width="370">
+                  <img class="portfolio__img-item"
+                  srcset="./images/mobile_portf6.jpg, ./images/mobile_portf6_2x.jpg 2x"src=./images/img-6.jpg alt="фото Inspiration has no
+                  Borders">
                   <div class="portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -219,8 +238,8 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img">
-                  <img src=./images/img-7.jpg alt="фото Видання Limited Edition"
-                  width="370">
+                  <img class="portfolio__img-item"
+                  srcset="./images/mobile_portf7.jpg, ./images/mobile_portf7_2x.jpg 2x"src=./images/img-7.jpg alt="фото Видання Limited Edition">
                   <div class="portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -240,7 +259,8 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img">
-                  <img src=./images/img-8.jpg alt="фото Проєкт LAB" width="370">
+                  <img class="portfolio__img-item"
+                  srcset="./images/mobile_portf8.jpg, ./images/mobile_portf8_2x.jpg 2x"src=./images/img-8.jpg alt="фото Проєкт LAB">
                   <div class="portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -260,8 +280,8 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
                 <div class="portfolio__img">
-                  <img src=./images/img-9.jpg alt="фото Growing Business"
-                  width="370">
+                  <img class="portfolio__img-item"
+                  srcset="./images/mobile_portf9.jpg, ./images/mobile_portf9_2x.jpg 2x" src=./images/img-9.jpg alt="фото Growing Business">
                   <div class="portfolio__overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -285,7 +305,8 @@
     <footer class="footer">
       <!--Контакти-->
       <div class="footer__container">
-        <div class="footer__address-container">
+      <div class="footer__tablet">        
+          <div class="footer__address-container">
           <a class="footer__logo" href="./index.html"
             ><span class="logo">Web</span>Studio</a
           >
@@ -370,8 +391,10 @@
             </li>
           </ul>
         </div>
+      </div>
+
         <!-- Підписка на розсилку -->
-        <div>
+        <div class="footer__subscribe">
           <p class="footer__title">Підпишіться на розсилку</p>
           <form class="footer__form" name="signup-form">
             <input
@@ -391,5 +414,95 @@
         </div>
       </div>
     </footer>
+<!-- випадаюче меню -->
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg
+      width="40"
+      height="40"
+      fill="currentColor">
+      <use class="icon-cross" href="./images/sprite.svg#icon-button_cross"> </use>
+    </svg>
+  </button>
+
+  <div class="mobile-menu">
+    <ul class="mobile-nav list">
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="./index.html">Студія</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="">Контакти</a>
+      </li>
+    </ul>
+  
+
+  <ul class="mobile-address list">
+    <li>
+      <a class="mobile-address__link-tel" href="tel:+380961111111">
+        +38 096 111 11 11</a>
+    </li>
+    <li>
+      <a class="mobile-address__link" href="mailto:info@devstudio.com">
+    info@devstudio.com
+      </a>
+    </li>
+
+  </ul>
+
+  <!-- Соціальні мережі -->
+  <ul class="mobile-social list">
+    <li class="mobile-social__item">
+      <a
+        class="mobile-social__link"
+        href=""
+        rel="noopener noreferer"
+        aria-label="Instagram"
+      >Instagram</a>
+    </li>
+    <li class="mobile-social__item">
+      <a
+        class="mobile-social__link"
+        href=""
+        rel="noopener noreferer"
+        aria-label="Twitter"
+      >Twitter</a>
+    </li>
+    <li class="mobile-social__item">
+      <a
+        class="mobile-social__link"
+        href=""
+        rel="noopener noreferer"
+        aria-label="Facebook"
+      >Facebook
+      </a>
+    </li>
+
+    <li  class="mobile-social__item">
+      <a data-after="false"
+        class="mobile-social__link"
+        href=""
+        rel="noopener noreferer"
+        aria-label="Likedin"
+      >Likedin
+      </a>
+    </li>
+  </ul>
+</div>
+  <!-- кінець соцмереж -->
+ 
+
+
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous">
+  </script>
+  <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+   
   </body>
 </html>
