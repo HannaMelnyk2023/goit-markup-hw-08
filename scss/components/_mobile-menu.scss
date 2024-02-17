@@ -70,7 +70,7 @@
 }
 .mobile-nav__item:not(:last-child) {
   margin-bottom: 32px;
-  //  background-color: red;
+  
 }
 .mobile-nav__link {
   display: flex;
@@ -113,7 +113,7 @@
 .mobile-social__item {
   display: flex;
   position: relative;
-  //  &:not(:last-child) {background-color: red;}
+  
 
   &::after {
     content: " ";

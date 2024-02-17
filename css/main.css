@@ -58,7 +58,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -90,7 +90,7 @@ img {
     width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
@@ -237,7 +237,7 @@ img {
     color: var(--accent-color);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .menu {
     margin-left: 93px;
   }
@@ -377,21 +377,21 @@ img {
     letter-spacing: 0.06em;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .section.hero {
-    max-width: 1600px;
+    max-width: 1200px;
     min-height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktop_hero.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop_hero.png);
   }
 }
-@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1600px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .section.hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desktophero@2x.png);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktophero@2x.png);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -487,7 +487,7 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal-wrapper {
     min-width: 528px;
     min-height: 581px;
@@ -670,7 +670,7 @@ img {
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .form-modal__checkbox {
     font-size: 14px;
     font-weight: 400;
@@ -701,7 +701,7 @@ img {
     margin-right: 30px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .feature__icon, .feature__disc {
     width: 270px;
   }
@@ -744,7 +744,7 @@ img {
 .directions {
   display: none;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .directions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -842,7 +842,7 @@ img {
     margin-right: 30px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .team__img {
     width: 270px;
   }
@@ -940,7 +940,7 @@ img {
     margin-right: 30px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__link {
     width: 226px;
     height: 92px;
@@ -956,7 +956,7 @@ img {
     margin-bottom: 0px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .clients__link {
     width: 170px;
     height: 92px;
@@ -1139,7 +1139,7 @@ img {
   border-top: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1599px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .filter {
     min-width: 580px;
     -webkit-box-pack: center;
@@ -1179,7 +1179,7 @@ img {
     height: 294px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .filter {
     min-width: 580px;
     -webkit-box-pack: center;
@@ -1297,7 +1297,7 @@ img {
     margin-right: 70px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1388,7 +1388,7 @@ img {
     margin: auto;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer__subscribe {
     width: 570px;
     margin: 0;
@@ -1474,7 +1474,7 @@ img {
   margin-right: 10px;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer-social__container {
     margin-bottom: 0;
   }
