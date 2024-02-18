@@ -2,18 +2,18 @@
 .section.team {
   background-color: var(--second-white-background);
 }
-
+//320
 .team {
   &__item {
     display: block;
     background-color: var(--prime-white-background);
     box-shadow: 0px 2px 1px 0px #00000033;
     border-radius: 4px;
-  margin-bottom: 30px;}
+    margin-bottom: 30px;}
 
 &__item-title {
       color: var(--second-color);
-      @include fonts(16px, 500, 1.2, 0.03em);
+      @include fonts(14px, 500, 1.2, 0.03em);
 
       text-align: center;
       margin-bottom: 10px;
@@ -22,7 +22,7 @@
   &__item-disc {
     
       margin-bottom: 16px;
-      @include fonts(16px, null, 1.2, 0.03em);
+      @include fonts(14px, null, 1.2, 0.03em);
 
       text-align: center;
     }
@@ -32,9 +32,48 @@
       padding-bottom: 30px;
     }
   &__img {
+      width: 290px;
+    }
+  }
+
+//480
+
+@media screen and (min-width: 480px) {
+  .team {
+  // &__item {
+  //   display: block;
+  //   background-color: var(--prime-white-background);
+  //   box-shadow: 0px 2px 1px 0px #00000033;
+  //   border-radius: 4px;
+  // margin-bottom: 30px;}
+
+&__item-title {
+      // color: var(--second-color);
+      @include fonts(16px, 500, 1.2, 0.03em);
+
+      // text-align: center;
+      // margin-bottom: 10px;
+    }
+
+  &__item-disc {
+    
+      // margin-bottom: 16px;
+      @include fonts(16px, null, 1.2, 0.03em);
+
+      // text-align: center;
+    }
+  // &__text-wrap 
+  // {
+    // width: 100%;
+    //   padding-top: 30px;
+    //   padding-bottom: 30px;
+    // }
+  &__img {
       width: 450px;
     }
   }
+}
+
 
 // 768
 @media screen and (min-width: 768px) {
