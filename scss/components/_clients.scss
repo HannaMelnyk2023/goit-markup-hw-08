@@ -25,9 +25,9 @@
     margin-right: 15px;
   }
 }
-  
+// and (max-width: 767px)
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .clients {
     &__link {
       width: 210px;
@@ -44,7 +44,8 @@
   }
 }
 // 768
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+@media screen and (min-width: 768px){
   .clients {
     &__link {
       width: 226px;
@@ -62,7 +63,7 @@
     }
   }
 }
-// 1200
+//1200
 @media screen and (min-width: 1200px) {
       .clients {
       &__link {

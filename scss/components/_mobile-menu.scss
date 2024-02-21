@@ -1,9 +1,4 @@
-// кнопка випадаючего меню - бургер
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-}
+// 320
 
 .menu-toggle {
   min-height: 40px;
@@ -19,17 +14,19 @@
   border: none;
   border-radius: 50%;
   outline: none;
-}
 
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
+  transition-property: fill;
+  transition-duration: 3000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .icon-menu,
+  &:focus .icon-menu {
+    fill: var(--accent-background);
   }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
-  fill: var(--accent-color);
+.icon-menu {
+  fill: var(--logo-background);
 }
 
 .menu-container {
@@ -38,7 +35,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 40px;
+  padding: 20px;
   background-color: var(--logo-whitecolor);
   z-index: 999;
 
@@ -52,10 +49,14 @@
 }
 
 .menu-container .menu-toggle {
-  position: absolute;
+  position: fixed;
   top: 16px;
   right: 16px;
   color: var(--second-color);
+  &:hover .icon-cross,
+  &:focus .icon-cross {
+    fill: var(--accent-background);
+  }
 }
 
 .mobile-menu {
@@ -65,18 +66,16 @@
 }
 
 .mobile-nav {
-  @include fonts(40px, 500, 1.2, 0.02em);
-  margin-bottom: 306px;
+  @include fonts(26px, 500, 1.2, 0.02em);
+  margin-bottom: 40vh;
 }
 .mobile-nav__item:not(:last-child) {
-  margin-bottom: 32px;
-  
+  margin-bottom: 20px;
 }
 .mobile-nav__link {
   display: flex;
   text-decoration: none;
   color: var(--second-color);
-
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -88,7 +87,7 @@
   margin-bottom: 64px;
 
   &__link-tel {
-    @include fonts(34px, 500, 2, 0.02em);
+    @include fonts(26px, 500, 2, 0.02em);
     text-decoration: none;
     color: var(--accent-color);
     margin-bottom: 32px;
@@ -97,7 +96,11 @@
     text-decoration: none;
     color: var(--prime-color);
 
-    @include fonts(24px, 500, 2, 0.02em);
+    @include fonts(20px, 500, 2, 0.02em);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
 
@@ -107,13 +110,12 @@
   margin-left: -10px;
   margin-right: -10px;
 
-  @include fonts(18px, 500, 1.2, 0.02em);
+  @include fonts(14px, 400, 1.2, 0.02em);
   color: var(--accent-color);
 }
 .mobile-social__item {
   display: flex;
   position: relative;
-  
 
   &::after {
     content: " ";
@@ -136,9 +138,46 @@
   display: block;
   padding-right: 10px;
   padding-left: 10px;
-  
+
   color: var(--accent-color);
-  
 }
 
+// 480
+@media screen and (min-width: 480px) {
+  .menu-container {
+    padding: 40px;
+  }
 
+  .mobile-nav {
+    @include fonts(40px, 500, 1.2, 0.02em);
+    margin-bottom: 40vh;
+  }
+  .mobile-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .mobile-address {
+    &__link-tel {
+      @include fonts(34px, 500, 2, 0.02em);
+    }
+    &__link {
+      @include fonts(24px, 500, 2, 0.02em);
+    }
+  }
+
+  .mobile-social {
+    @include fonts(18px, 500, 1.2, 0.02em);
+  }
+}
+
+// кнопка випадаючего меню - бургер
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
