@@ -199,12 +199,19 @@
       margin-bottom: 0px;
     }
   }
+  .portfolio__flex {
+    display: flex;
+    flex-direction: column;
+    // flex-basis: 354px;
+   
+  }
   .portfolio__img-item {
     width: 354px;
     height: 294px;
   }
   .portfolio__text-wrap {
     flex-grow: 1;
+   
   }
 }
 

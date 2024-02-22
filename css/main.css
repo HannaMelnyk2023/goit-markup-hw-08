@@ -1233,6 +1233,15 @@ img {
   .portfolio__item:nth-last-child(-n+1) {
     margin-bottom: 0px;
   }
+  .portfolio__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .portfolio__img-item {
     width: 354px;
     height: 294px;
