@@ -15,9 +15,6 @@
   border-radius: 50%;
   outline: none;
 
-  transition-property: fill;
-  transition-duration: 3000ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover .icon-menu,
   &:focus .icon-menu {
@@ -27,6 +24,9 @@
 
 .icon-menu {
   fill: var(--logo-background);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container {
@@ -39,7 +39,7 @@
   background-color: var(--logo-whitecolor);
   z-index: 999;
 
-  transform: translateY(-100%);
+  transform: translateY(-400%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -57,6 +57,12 @@
   &:focus .icon-cross {
     fill: var(--accent-background);
   }
+}
+.icon-cross {
+  fill: var(--logo-background);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu {
@@ -81,10 +87,13 @@
     color: var(--accent-color);
   }
 }
+.mobile-nav__link.current {
+  color: var(--accent-color);
+}
 
 .mobile-address {
   display: block;
-  margin-bottom: 64px;
+  margin-bottom: 5vh;
 
   &__link-tel {
     @include fonts(26px, 500, 2, 0.02em);
@@ -150,13 +159,14 @@
 
   .mobile-nav {
     @include fonts(40px, 500, 1.2, 0.02em);
-    margin-bottom: 40vh;
+    margin-bottom: 30vh;
   }
   .mobile-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
 
   .mobile-address {
+    margin-bottom: 6vh;
     &__link-tel {
       @include fonts(34px, 500, 2, 0.02em);
     }

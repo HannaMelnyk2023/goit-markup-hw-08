@@ -11,7 +11,9 @@
     border-radius: 4px;
     margin-bottom: 30px;
   }
-
+  &__item:last-child {
+    margin-bottom: 0px;
+  }
   &__item-title {
     color: var(--second-color);
     @include fonts(14px, 500, 1.2, 0.03em);
@@ -64,10 +66,14 @@
     }
     &__img {
       width: 354px;
+      height: 374px;
     }
 
     &__item:not(:nth-child(2n)) {
       margin-right: 30px;
+    }
+    &__item:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
     }
   }
 }
@@ -76,6 +82,7 @@
   .team {
     &__img {
       width: 270px;
+      height: 260px;
     }
     &__item {
       margin-bottom: 0px;

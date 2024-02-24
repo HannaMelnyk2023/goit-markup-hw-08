@@ -18,44 +18,48 @@
 
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-    
-    <body> 
-      <header>
-        <!--Хедер-->
-        <!-- <section class="section"> -->
-        <div class="header container">
-          <a class="header-logo" href="./index.html"
-            ><span class="logo">Web</span>Studio</a
-          > 
-          <!-- кнопка для випадаючого меню при 480px -->
-          <div class="container-toggle">
-            <button class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu">
-               
-          <svg
-            width="40"
-            height="40"
-            fill="currentColor">
-            <use class="icon-menu" href="./images/sprite.svg#icon-button_burger"></use>
-          </svg>
-          </button></div>
-          
-       <div class="menu">
+
+  <body>
+    <header>
+      <!--Хедер-->
+      <!-- <section class="section"> -->
+      <div class="header container">
+        <a class="header-logo" href="./index.html"
+          ><span class="logo">Web</span>Studio</a
+        >
+        <!-- кнопка для випадаючого меню при 480px -->
+        <div class="container-toggle">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40" fill="currentColor">
+              <use
+                class="icon-menu"
+                href="./images/sprite.svg#icon-button_burger"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="menu">
           <nav class="header-nav">
             <ul class="header-nav__list list">
               <li class="header-nav__item">
                 <a class="header-nav__link" href="./index.html">Студія</a>
               </li>
               <li class="header-nav__item">
-                <a class="header-nav__link current" href="./portfolio.html">Портфоліо</a>
+                <a class="header-nav__link current" href="./portfolio.html"
+                  >Портфоліо</a
+                >
               </li>
               <li class="header-nav__item">
                 <a class="header-nav__link" href="">Контакти</a>
               </li>
             </ul>
           </nav>
-  
+
           <ul class="header-address list">
             <li class="header-address__item">
               <a class="header-address__link" href="mailto:info@devstudio.com">
@@ -76,9 +80,9 @@
           </ul>
         </div>
       </div>
-        <!-- </section> -->
-      </header>
-      <main>
+      <!-- </section> -->
+    </header>
+    <main>
       <section class="section">
         <!--Фільтри-->
         <div class="container">
@@ -105,20 +109,35 @@
           <ul class="portfolio list">
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <div class="portfolio__flex">
-              
                 <div class="portfolio__img">
                   <picture class="portfolio__img-item">
-                    <source media="screen and (min-width: 320px) and (max-width: 479px)"
-                    srcset="./images/img-1.jpg" width="280">
-                    <source media="screen and (min-width: 480px) and (max-width: 767px)"
-                    srcset="./images/mobile_portf1.jpg, 
-                    ./images/mobile_portf1_2x.jpg 2x">
-                    <source media="screen and (min-width: 768px) and (max-width: 1199px)"
-                    srcset="./images/tablet_portf1.jpg, ./images/tablet_portf1_2x.jpg 2x">
-                    <source media="screen and (min-width: 1200px)"
-                    srcset="./images/desktop_portfolio1.jpg, ./images/desktop_portfolio1_2x.jpg 2x">
-                    <img src="./images/img-1.jpg"  alt="фото Технокряк"/>
+                    <source
+                      media="screen and (min-width: 320px) and (max-width: 479px)"
+                      srcset="./images/img-1.jpg"
+                      width="290"
+                    />
+                    <source
+                      media="screen and (min-width: 480px) and (max-width: 767px)"
+                      srcset="
+                        ./images/mobile_portf1.jpg,
+                        ./images/mobile_portf1_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet_portf1.jpg,
+                        ./images/tablet_portf1_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/desktop_portfolio1.jpg,
+                        ./images/desktop_portfolio1_2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/img-1.jpg" alt="фото Технокряк" />
                   </picture>
 
                   <div class="portfolio__overlay">
@@ -134,23 +153,42 @@
                   <h2 class="portfolio__title">Технокряк</h2>
                   <p class="portfolio__disc">Веб-сайт</p>
                 </div>
-                </div>
               </a>
             </li>
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <div class="portfolio__flex">
                 <div class="portfolio__img">
                   <picture class="portfolio__img-item">
-                    <source media="screen and (min-width: 320px) and (max-width: 479px)"
-                    srcset="./images/img-2.jpg" width="280">
-                    <source media="screen and (min-width: 480px) and (max-width: 767px)"
-                    srcset="./images/mobile_portf2.jpg, ./images/mobile_portf2_2x.jpg 2x">
-                    <source media="screen and (min-width: 768px) and (max-width: 1199px)"
-                    srcset="./images/tablet_portf2.jpg, ./images/tablet_portf2_2x.jpg 2x">
-                    <source media="screen and (min-width: 1200px)"
-                    srcset="./images/desktop_portfolio2.jpg, ./images/desktop_portfolio2_2x.jpg 2x">
-                    <img src="./images/img-2.jpg"  alt="фото Постер New Orlean vs Golden Star"/>
+                    <source
+                      media="screen and (min-width: 320px) and (max-width: 479px)"
+                      srcset="./images/img-2.jpg"
+                      width="290"
+                    />
+                    <source
+                      media="screen and (min-width: 480px) and (max-width: 767px)"
+                      srcset="
+                        ./images/mobile_portf2.jpg,
+                        ./images/mobile_portf2_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet_portf2.jpg,
+                        ./images/tablet_portf2_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/desktop_portfolio2.jpg,
+                        ./images/desktop_portfolio2_2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/img-2.jpg"
+                      alt="фото Постер New Orlean vs Golden Star"
+                    />
                   </picture>
                   <div class="portfolio__overlay">
                     <p>
@@ -166,23 +204,39 @@
                     Постер New Orlean vs Golden Star
                   </h2>
                   <p class="portfolio__disc">Дизайн</p>
-                </div></div>
+                </div>
               </a>
             </li>
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <div class="portfolio__flex">
                 <div class="portfolio__img">
                   <picture class="portfolio__img-item">
-                    <source media="screen and (min-width: 320px) and (max-width: 479px)"
-                    srcset="./images/img-3.jpg" width="280">
-                    <source media="screen and (min-width: 480px) and (max-width: 767px)"
-                    srcset="./images/mobile_portf3.jpg, ./images/mobile_portf3_2x.jpg 2x">
-                    <source media="screen and (min-width: 768px) and (max-width: 1199px)"
-                    srcset="./images/tablet_portf3.jpg, ./images/tablet_portf3_2x.jpg 2x">
-                    <source media="screen and (min-width: 1200px)"
-                    srcset="./images/desktop_portfolio3.jpg, ./images/desktop_portfolio3_2x.jpg 2x">
-
+                    <source
+                      media="screen and (min-width: 320px) and (max-width: 479px)"
+                      srcset="./images/img-3.jpg"
+                      width="290"
+                    />
+                    <source
+                      media="screen and (min-width: 480px) and (max-width: 767px)"
+                      srcset="
+                        ./images/mobile_portf3.jpg,
+                        ./images/mobile_portf3_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet_portf3.jpg,
+                        ./images/tablet_portf3_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/desktop_portfolio3.jpg,
+                        ./images/desktop_portfolio3_2x.jpg 2x
+                      "
+                    />
 
                     <img src=./images/img-3.jpg alt="фото Ресторан Seafood"/>
                   </picture>
@@ -200,30 +254,44 @@
                 <div class="portfolio__text-wrap">
                   <h2 class="portfolio__title">Ресторан Seafood</h2>
                   <p class="portfolio__disc">Додаток</p>
-                </div></div>
+                </div>
               </a>
             </li>
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <div class="portfolio__flex">
                 <div class="portfolio__img">
                   <picture class="portfolio__img-item">
-                    <source media="screen and (min-width: 320px) and (max-width: 479px)"
-                    srcset="./images/img-4.jpg" width="280">
-                    <source media="screen and (min-width: 480px) and (max-width: 767px)"
-                      srcset="./images/mobile_portf4.jpg, 
-                      ./images/mobile_portf4_2x.jpg 2x">
-                      <source media="screen and (min-width: 768px) and (max-width: 1199px)"
-                      srcset="./images/tablet_portf4.jpg, ./images/tablet_portf4_2x.jpg 2x">
-                      <source media="screen and (min-width: 1200px)"
-                      srcset="./images/desktop_portfolio4.jpg, ./images/desktop_portfolio4_2x.jpg 2x">
+                    <source
+                      media="screen and (min-width: 320px) and (max-width: 479px)"
+                      srcset="./images/img-4.jpg"
+                      width="290"
+                    />
+                    <source
+                      media="screen and (min-width: 480px) and (max-width: 767px)"
+                      srcset="
+                        ./images/mobile_portf4.jpg,
+                        ./images/mobile_portf4_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet_portf4.jpg,
+                        ./images/tablet_portf4_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/desktop_portfolio4.jpg,
+                        ./images/desktop_portfolio4_2x.jpg 2x
+                      "
+                    />
 
-
-                      <img src="./images/img-4.jpg" alt="фото Проєкт Prime"/>
-                    </picture> 
+                    <img src="./images/img-4.jpg" alt="фото Проєкт Prime" />
+                  </picture>
 
                   <div class="portfolio__overlay">
-
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
@@ -237,26 +305,40 @@
                   <h2 class="portfolio__title">Проєкт Prime</h2>
                   <p class="portfolio__disc">Маркетінг</p>
                 </div>
-              </div>
-                </a
-              >
+              </a>
             </li>
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <div class="portfolio__flex">
                 <div class="portfolio__img">
                   <picture class="portfolio__img-item">
-                    <source media="screen and (min-width: 320px) and (max-width: 479px)"
-                    srcset="./images/img-5.jpg" width="280">
-                    <source media="screen and (min-width: 480px) and (max-width: 767px)"
-                      srcset="./images/mobile_portf5.jpg, 
-                      ./images/mobile_portf5_2x.jpg 2x">
-                      <source media="screen and (min-width: 768px) and (max-width: 1199px)"
-                      srcset="./images/tablet_portf5.jpg, ./images/tablet_portf5_2x.jpg 2x">
-                      <source media="screen and (min-width: 1200px)"
-                      srcset="./images/desktop_portfolio5.jpg, ./images/desktop_portfolio5_2x.jpg 2x">
-                      <img src="./images/img-5.jpg" alt="фото Проєкт Boxes"/>
-                    </picture>
+                    <source
+                      media="screen and (min-width: 320px) and (max-width: 479px)"
+                      srcset="./images/img-5.jpg"
+                      width="290"
+                    />
+                    <source
+                      media="screen and (min-width: 480px) and (max-width: 767px)"
+                      srcset="
+                        ./images/mobile_portf5.jpg,
+                        ./images/mobile_portf5_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet_portf5.jpg,
+                        ./images/tablet_portf5_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/desktop_portfolio5.jpg,
+                        ./images/desktop_portfolio5_2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/img-5.jpg" alt="фото Проєкт Boxes" />
+                  </picture>
 
                   <div class="portfolio__overlay">
                     <p>
@@ -271,27 +353,44 @@
                   <h2 class="portfolio__title">Проєкт Boxes</h2>
                   <p class="portfolio__disc">Додаток</p>
                 </div>
-              </div>
               </a>
             </li>
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <div class="portfolio__flex">
                 <div class="portfolio__img">
-                      <picture class="portfolio__img-item">
-                        <source media="screen and (min-width: 320px) and (max-width: 479px)"
-                        srcset="./images/img-6.jpg" width="280">
-                        <source media="screen and (min-width: 480px) and (max-width: 767px)"
-                        srcset="./images/mobile_portf6.jpg, 
-                        ./images/mobile_portf6_2x.jpg 2x">
-                        <source media="screen and (min-width: 768px) and (max-width: 1199px)"
-                        srcset="./images/tablet_portf6.jpg, ./images/tablet_portf6_2x.jpg 2x">
-                        <source media="screen and (min-width: 1200px)"
-                        srcset="./images/desktop_portfolio6.jpg, ./images/desktop_portfolio6_2x.jpg 2x">
-                        <img src="./images/img-6.jpg" alt="фото Inspiration has no
-                        Borders"/>
-                      </picture>
-
+                  <picture class="portfolio__img-item">
+                    <source
+                      media="screen and (min-width: 320px) and (max-width: 479px)"
+                      srcset="./images/img-6.jpg"
+                      width="290"
+                    />
+                    <source
+                      media="screen and (min-width: 480px) and (max-width: 767px)"
+                      srcset="
+                        ./images/mobile_portf6.jpg,
+                        ./images/mobile_portf6_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet_portf6.jpg,
+                        ./images/tablet_portf6_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/desktop_portfolio6.jpg,
+                        ./images/desktop_portfolio6_2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/img-6.jpg"
+                      alt="фото Inspiration has no
+                        Borders"
+                    />
+                  </picture>
 
                   <div class="portfolio__overlay">
                     <p>
@@ -306,25 +405,43 @@
                 <div class="portfolio__text-wrap">
                   <h2 class="portfolio__title">Inspiration has no Borders</h2>
                   <p class="portfolio__disc">Веб-сайт</p>
-                </div></div>
-                </a
-              >
+                </div>
+              </a>
             </li>
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <div class="portfolio__flex">
                 <div class="portfolio__img">
                   <picture class="portfolio__img-item">
-                    <source media="screen and (min-width: 320px) and (max-width: 479px)"
-                    srcset="./images/img-7.jpg" width="280">
-                    <source media="screen and (min-width: 480px) and (max-width: 767px)"
-                    srcset="./images/mobile_portf7.jpg, 
-                    ./images/mobile_portf7_2x.jpg 2x">
-                    <source media="screen and (min-width: 768px) and (max-width: 1199px)"
-                    srcset="./images/tablet_portf7.jpg, ./images/tablet_portf7_2x.jpg 2x">
-                    <source media="screen and (min-width: 1200px)"
-                    srcset="./images/desktop_portfolio7.jpg, ./images/desktop_portfolio7_2x.jpg 2x">
-                    <img src="./images/img-7.jpg"  alt="фото Видання Limited Edition"/>
+                    <source
+                      media="screen and (min-width: 320px) and (max-width: 479px)"
+                      srcset="./images/img-7.jpg"
+                      width="290"
+                    />
+                    <source
+                      media="screen and (min-width: 480px) and (max-width: 767px)"
+                      srcset="
+                        ./images/mobile_portf7.jpg,
+                        ./images/mobile_portf7_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet_portf7.jpg,
+                        ./images/tablet_portf7_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/desktop_portfolio7.jpg,
+                        ./images/desktop_portfolio7_2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/img-7.jpg"
+                      alt="фото Видання Limited Edition"
+                    />
                   </picture>
 
                   <div class="portfolio__overlay">
@@ -340,25 +457,40 @@
                 <div class="portfolio__text-wrap">
                   <h2 class="portfolio__title">Видання Limited Edition</h2>
                   <p class="portfolio__disc">Дизайн</p>
-                </div></div>
-                </a
-              >
+                </div>
+              </a>
             </li>
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <div class="portfolio__flex">
                 <div class="portfolio__img">
                   <picture class="portfolio__img-item">
-                    <source media="screen and (min-width: 320px) and (max-width: 479px)"
-                    srcset="./images/img-8.jpg" width="280">
-                    <source media="screen and (min-width: 480px) and (max-width: 767px)"
-                    srcset="./images/mobile_portf8.jpg, 
-                    ./images/mobile_portf8_2x.jpg 2x">
-                    <source media="screen and (min-width: 768px) and (max-width: 1199px)"
-                    srcset="./images/tablet_portf8.jpg, ./images/tablet_portf8_2x.jpg 2x">
-                    <source media="screen and (min-width: 1200px)"
-                    srcset="./images/desktop_portfolio8.jpg, ./images/desktop_portfolio8_2x.jpg 2x">
-                    <img src="./images/img-8.jpg"  alt="фото Проєкт LAB"/>
+                    <source
+                      media="screen and (min-width: 320px) and (max-width: 479px)"
+                      srcset="./images/img-8.jpg"
+                      width="290"
+                    />
+                    <source
+                      media="screen and (min-width: 480px) and (max-width: 767px)"
+                      srcset="
+                        ./images/mobile_portf8.jpg,
+                        ./images/mobile_portf8_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet_portf8.jpg,
+                        ./images/tablet_portf8_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/desktop_portfolio8.jpg,
+                        ./images/desktop_portfolio8_2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/img-8.jpg" alt="фото Проєкт LAB" />
                   </picture>
 
                   <div class="portfolio__overlay">
@@ -374,27 +506,42 @@
                 <div class="portfolio__text-wrap">
                   <h2 class="portfolio__title">Проєкт LAB</h2>
                   <p class="portfolio__disc">Маркетинг</p>
-                </div></div></a
+                </div></a
               >
             </li>
-            
+
             <li class="portfolio__item">
               <a class="portfolio__link" href="">
-                <div class="portfolio__flex">
                 <div class="portfolio__img">
-                  
-                    <picture class="portfolio__img-item">
-                      <source media="screen and (min-width: 320px) and (max-width: 479px)"
-                      srcset="./images/img-9.jpg" width="280">
-                      <source media="screen and (min-width: 480px) and (max-width: 767px)"
-                      srcset="./images/mobile_portf9.jpg, 
-                      ./images/mobile_portf9_2x.jpg 2x">
-                      <source media="screen and (min-width: 768px) and (max-width: 1199px)"
-                      srcset="./images/tablet_portf9.jpg, ./images/tablet_portf9_2x.jpg 2x">
-                      <source media="screen and (min-width: 1200px)"
-                      srcset="./images/desktop_portfolio9.jpg, ./images/desktop_portfolio9_2x.jpg 2x">
-                      <img src="./images/img-9.jpg" alt="фото Growing Business"/>
-                    </picture>
+                  <picture class="portfolio__img-item">
+                    <source
+                      media="screen and (min-width: 320px) and (max-width: 479px)"
+                      srcset="./images/img-9.jpg"
+                      width="290"
+                    />
+                    <source
+                      media="screen and (min-width: 480px) and (max-width: 767px)"
+                      srcset="
+                        ./images/mobile_portf9.jpg,
+                        ./images/mobile_portf9_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet_portf9.jpg,
+                        ./images/tablet_portf9_2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="screen and (min-width: 1200px)"
+                      srcset="
+                        ./images/desktop_portfolio9.jpg,
+                        ./images/desktop_portfolio9_2x.jpg 2x
+                      "
+                    />
+                    <img src="./images/img-9.jpg" alt="фото Growing Business" />
+                  </picture>
 
                   <div class="portfolio__overlay">
                     <p>
@@ -406,10 +553,10 @@
                   </div>
                 </div>
 
-                <div class="portfolio__text-wrap">  
+                <div class="portfolio__text-wrap">
                   <h2 class="portfolio__title">Growing Business</h2>
                   <p class="portfolio__disc">Додаток</p>
-                </div></div></a
+                </div></a
               >
             </li>
           </ul>
@@ -419,93 +566,93 @@
     <footer class="footer">
       <!--Контакти-->
       <div class="footer__container">
-      <div class="footer__tablet">        
+        <div class="footer__tablet">
           <div class="footer__address-container">
-          <a class="footer__logo" href="./index.html"
-            ><span class="logo">Web</span>Studio</a
-          >
-          <!-- Адреса -->
-          <address class="address">
-            <ul>
-              <li>
+            <a class="footer__logo" href="./index.html"
+              ><span class="logo">Web</span>Studio</a
+            >
+            <!-- Адреса -->
+            <address class="address">
+              <ul>
+                <li>
+                  <a
+                    class="footer__address"
+                    href="https://www.google.com.ua/maps/place"
+                    target="blank"
+                    rel="noopener noreferrer"
+                  >
+                    м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- Соціальні мережі-футер -->
+          <div class="footer-social__container">
+            <p class="footer__title">Приєднуйтесь</p>
+            <ul class="footer-social__list">
+              <li class="footer-social__item">
                 <a
-                  class="footer__address"
-                  href="https://www.google.com.ua/maps/place"
-                  target="blank"
-                  rel="noopener noreferrer"
+                  class="footer-social__link"
+                  href=""
+                  rel="noopener noreferer"
+                  aria-label="іконка Instagram"
                 >
-                  м. Київ, пр-т Лесі Українки, 26</a
-                >
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="footer__link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li class="footer-social__item">
+                <a
+                  class="footer-social__link"
+                  href=""
+                  rel="noopener noreferer"
+                  aria-label="іконка Twitter"
                 >
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="footer__link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+              <li class="footer-social__item">
+                <a
+                  class="footer-social__link"
+                  href=""
+                  rel="noopener noreferer"
+                  aria-label="іконка Facebook"
                 >
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer-social__item">
+                <a
+                  class="footer-social__link"
+                  href=""
+                  rel="noopener noreferer"
+                  aria-label="іконка Likedin"
+                >
+                  <svg class="footer-social__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <!-- Соціальні мережі-футер -->
-        <div class="footer-social__container">
-          <p class="footer__title">Приєднуйтесь</p>
-          <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <a
-                class="footer-social__link"
-                href=""
-                rel="noopener noreferer"
-                aria-label="іконка Instagram"
-              >
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a
-                class="footer-social__link"
-                href=""
-                rel="noopener noreferer"
-                aria-label="іконка Twitter"
-              >
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social__item">
-              <a
-                class="footer-social__link"
-                href=""
-                rel="noopener noreferer"
-                aria-label="іконка Facebook"
-              >
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="footer-social__item">
-              <a
-                class="footer-social__link"
-                href=""
-                rel="noopener noreferer"
-                aria-label="іконка Likedin"
-              >
-                <svg class="footer-social__icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
         <!-- Підписка на розсилку -->
         <div class="footer__subscribe">
@@ -528,96 +675,95 @@
         </div>
       </div>
     </footer>
-<!-- випадаюче меню -->
-<div class="menu-container js-menu-container" id="mobile-menu">
-  <button class="menu-toggle js-close-menu">
-    <svg
-      width="40"
-      height="40"
-      fill="currentColor">
-      <use class="icon-cross" href="./images/sprite.svg#icon-button_cross"> </use>
-    </svg>
-  </button>
+    <!-- випадаюче меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40" fill="currentColor">
+          <use
+            class="icon-cross"
+            href="./images/sprite.svg#icon-button_cross"
+          ></use>
+        </svg>
+      </button>
 
-  <div class="mobile-menu">
-    <ul class="mobile-nav list">
-      <li class="mobile-nav__item">
-        <a class="mobile-nav__link" href="./index.html">Студія</a>
-      </li>
-      <li class="mobile-nav__item">
-        <a class="mobile-nav__link" href="./portfolio.html">Портфоліо</a>
-      </li>
-      <li class="mobile-nav__item">
-        <a class="mobile-nav__link" href="">Контакти</a>
-      </li>
-    </ul>
-  
+      <div class="mobile-menu">
+        <ul class="mobile-nav list">
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link current" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a class="mobile-nav__link" href="">Контакти</a>
+          </li>
+        </ul>
 
-  <ul class="mobile-address list">
-    <li>
-      <a class="mobile-address__link-tel" href="tel:+380961111111">
-        +38 096 111 11 11</a>
-    </li>
-    <li>
-      <a class="mobile-address__link" href="mailto:info@devstudio.com">
-    info@devstudio.com
-      </a>
-    </li>
+        <ul class="mobile-address list">
+          <li>
+            <a class="mobile-address__link-tel" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li>
+            <a class="mobile-address__link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
 
-  </ul>
+        <!-- Соціальні мережі -->
+        <ul class="mobile-social list">
+          <li class="mobile-social__item">
+            <a
+              class="mobile-social__link"
+              href=""
+              rel="noopener noreferer"
+              aria-label="Instagram"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-social__item">
+            <a
+              class="mobile-social__link"
+              href=""
+              rel="noopener noreferer"
+              aria-label="Twitter"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-social__item">
+            <a
+              class="mobile-social__link"
+              href=""
+              rel="noopener noreferer"
+              aria-label="Facebook"
+              >Facebook
+            </a>
+          </li>
 
-  <!-- Соціальні мережі -->
-  <ul class="mobile-social list">
-    <li class="mobile-social__item">
-      <a
-        class="mobile-social__link"
-        href=""
-        rel="noopener noreferer"
-        aria-label="Instagram"
-      >Instagram</a>
-    </li>
-    <li class="mobile-social__item">
-      <a
-        class="mobile-social__link"
-        href=""
-        rel="noopener noreferer"
-        aria-label="Twitter"
-      >Twitter</a>
-    </li>
-    <li class="mobile-social__item">
-      <a
-        class="mobile-social__link"
-        href=""
-        rel="noopener noreferer"
-        aria-label="Facebook"
-      >Facebook
-      </a>
-    </li>
-
-    <li  class="mobile-social__item">
-      <a data-after="false"
-        class="mobile-social__link"
-        href=""
-        rel="noopener noreferer"
-        aria-label="Likedin"
-      >Likedin
-      </a>
-    </li>
-  </ul>
-</div>
-</div>
-  <!-- кінець соцмереж -->
- 
-
+          <li class="mobile-social__item">
+            <a
+              data-after="false"
+              class="mobile-social__link"
+              href=""
+              rel="noopener noreferer"
+              aria-label="Likedin"
+              >Likedin
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- кінець соцмереж -->
 
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous">
-  </script>
-  <script defer src="js/mobile-menu.js"></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-   
   </body>
 </html>

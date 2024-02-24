@@ -1,5 +1,5 @@
 /* Модальне вікно */
-
+// 320
 .backdrop {
   position: fixed;
   top: 0;
@@ -26,14 +26,14 @@
   /* transform: translate(-50%, -50%); */
 
   background-color: var(--logo-whitecolor);
-  min-width: 450px;
-  min-height: 609px;
+  max-width: 300px;
+  min-height: 400px;
 
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  padding: 40px 40px;
+  padding: 30px 30px;
 }
 
 /* Початковий стан */
@@ -50,8 +50,8 @@
 
 .modal-wrapper__btn {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 10px;
+  right: 10px;
 
   display: flex;
   justify-content: center;
@@ -75,7 +75,14 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+// 480
+@media screen and (min-width: 480px) {
+  .modal-wrapper {
+    min-width: 450px;
+    min-height: 609px;
+    padding: 40px 40px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal-wrapper {
     min-width: 528px;

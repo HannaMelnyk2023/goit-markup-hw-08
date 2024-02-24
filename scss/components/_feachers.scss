@@ -5,7 +5,6 @@
 }
 //320
 
-
 // 480
 .feature {
   &__icon {
@@ -32,36 +31,51 @@
   &__disc {
     @include fonts(14px, null, 1.7, 0.03em);
   }
-  &__item:not(:last-child) {
-      margin-bottom: 30px;
+  &__item {
+    margin-bottom: 30px;
+  }
+  &__item:last-child {
+    margin-bottom: 0px;
   }
 }
-
 
 // 768
 @media screen and (min-width: 768px) {
   .feature {
     display: flex;
     flex-wrap: wrap;
-    
-    &__icon, &__disc {
+
+    &__icon,
+    &__disc {
       width: 354px;
     }
     &__item:not(:nth-child(2n)) {
       margin-right: 30px;
     }
+    &__item:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
   }
 }
 // 1200
 @media screen and (min-width: 1200px) {
+  .section.feature {
+    padding-bottom: 0px;
+  }
+
   .feature {
-    &__icon, &__disc  {
+    &__icon,
+    &__disc {
       width: 270px;
+    }
+    &__item {
+      margin-bottom: 0px;
     }
     &__item:not(:last-child) {
       margin-right: 30px;
+    }
+  &__title {
+    text-align:left;
   }
 }
 }
-
-
